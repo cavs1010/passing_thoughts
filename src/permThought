@@ -1,0 +1,17 @@
+import React, { useEffect } from 'react';
+
+export function PermThought(props) {
+  const { thought, removeThought } = props;
+
+  return (
+    <li className="Thought">
+      <button
+        aria-label="Remove thought"
+        className="remove-button"
+      >
+        &times;
+      </button>
+      <div className="text">{thought.text}</div>
+    </li>
+  );
+}
